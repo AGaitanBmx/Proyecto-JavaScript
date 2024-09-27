@@ -35,7 +35,7 @@ function agregarProducto(event) {
 
 function actualizarTabla() {
     const tabla = document.getElementById('tablaInventario').getElementsByTagName('tbody')[0];
-    tabla.innerHTML = ''; // Limpia la tabla antes de redibujarla
+    tabla.innerHTML = '';
     let valorTotal = 0;
 
     inventario.forEach((producto, index) => {

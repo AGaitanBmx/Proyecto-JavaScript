@@ -1,12 +1,139 @@
+body{
+    background-color: #e0ffff;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+header{
+    background-color: #e0ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #e0ffff;
+    text-align: center;
+}
+
+main{
+    background-color: #7acfa2;
+    border-radius: 15px;
+}
+
+nav ul{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 th, td {
-    border: 2px solid black;
-    padding: 8px;
+    border: 1px solid #e0ffff;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
     text-align: left;
 }
+
 th {
-    background-color: #f2f2f2;
+    background-color: #ade7d1;
+}
+
+.bottonHeader{
+    text-decoration: none;
+    margin: 15px 15px;
+    font-size: 35px;
+    color: black;
+    transition: font-size 0.3s ease;
+}
+
+.bottonHeader:hover{
+    font-size: 40px;
+}
+
+.iconoHeader{
+    width: 4.5vw;
+    margin: 15px;
+}
+
+.seccionTitulo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formularioPrincipal{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.titulo1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.botonAgregar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c7f3e8;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;  
+}
+
+.botonAgregar:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.entradaDatos{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.seccionImagenes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+}
+
+.imgDescriptiva{
+    width: 13vw;
+}
+
+.seccionTexto{
+    text-align: center;
+    padding-bottom: 7vh;
+}
+
+.textoBajoImagenes{
+    font-size: 30px;
+}
+
+.textValorTotal{
+    font-size: 30px;
+}
+
+.textFooter{
+    font-size: 25px;
 }
