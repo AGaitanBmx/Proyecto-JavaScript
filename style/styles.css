@@ -118,7 +118,7 @@ th {
 }
 
 .imgDescriptiva{
-    width: 13vw;
+    width: 12vw;
 }
 
 .seccionTexto{
@@ -136,4 +136,13 @@ th {
 
 .textFooter{
     font-size: 25px;
+}
+
+.seccionimgftr{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgFooter{
+    width: 4vw;
 }
