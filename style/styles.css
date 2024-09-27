@@ -113,7 +113,7 @@ th {
 .seccionImagenes{
     display: flex;
     justify-content: space-around;
-    padding-top: 15vh;
+    margin-top: 4vh;
     padding-bottom: 10vh;
 }
 
@@ -126,8 +126,9 @@ th {
     padding-bottom: 7vh;
 }
 
-.textoBajoImagenes{
-    font-size: 30px;
+.textoSobreImagenes{
+    font-size: 35px;
+    margin-top: 50px;
 }
 
 .textValorTotal{
@@ -144,5 +145,14 @@ th {
 }
 
 .imgFooter{
-    width: 4vw;
+    width: 3vw;
+}
+
+.btn-eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
 }

@@ -56,6 +56,8 @@ function actualizarTabla() {
 
         const botonEliminar = document.createElement('button');
         botonEliminar.innerHTML = 'Eliminar';
+        botonEliminar.classList.add('btn-eliminar');
+
         botonEliminar.onclick = function() {
             eliminarProducto(index);
         };
