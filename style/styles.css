@@ -127,12 +127,13 @@ th {
 }
 
 .textoSobreImagenes{
-    font-size: 35px;
+    font-size: 32px;
     margin-top: 50px;
 }
 
 .textValorTotal{
     font-size: 30px;
+    padding: 10px;
 }
 
 .textFooter{
@@ -155,4 +156,32 @@ th {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
+}
+
+.dolar-estilizado {
+    font-size: 30px;
+    color: #65b389;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #e0ffff;
+    border-radius: 5px;
+}
+
+.btn-descarga{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c7f3e8;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;  
+}
+
+.btn-descarga:active{
+    box-shadow: none;
+    transform: translateY(4px);
 }

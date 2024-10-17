@@ -6,27 +6,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
-    <title>Simulador de Inventario</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/styles.css">
+    <title>Simulador de Inventario</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li>
-                    <a class="bottonHeader" href="">Inicio</a>
+                    <a href="#seccion_inicio" class="bottonHeader" href="">Inicio</a>
                 </li>
                 <li>
-                    <a class="bottonHeader" href="">inventario Disponible</a>
+                    <a href="#seccion_inventario" class="bottonHeader" href="">inventario Disponible</a>
                 </li>
                 <li>
-                    <a class="bottonHeader" href="">Contacto</a>
+                    <a class="bottonHeader" href="#boton_json">Descargar Inventario</a>
                 </li>
             </ul>
         </nav>
         <img class="iconoHeader" src="./images/icono.png" alt="">
     </header>
-    <main>
+    <main id="seccion_inicio">
         <section class="seccion1">
             <div class="seccionTitulo">
                 <h1 class="titulo1">Simulador de Inventario</h1>
@@ -41,7 +43,7 @@
                 <button class="botonAgregar" type="submit">Agregar Producto</button>
             </form>
         </section>
-        <section>
+        <section data-aos="zoom-in" id="seccion_inventario">
             <h2>Inventario</h2>
             <table id="tablaInventario">
                 <thead>
@@ -56,18 +58,16 @@
                 <tbody>
                 </tbody>
             </table>
-            <h3 class="textValorTotal">Valor total del inventario: $<span id="valorTotal">0.00</span></h3>
+            <h3 class="textValorTotal">Valor total del inventario: <span id="valorTotal">0.00</span></h3>
         </section>
+        <div id="valorTotalDolares" class="dolar-estilizado">Total en dólares: Cargando...</div>
+        <div id="boton_json"></div>
         <section class="seccionTexto">
-            <p class="textoSobreImagenes">Somos la mejor opción para tu que gestiones tu inventario.</p>
+            <h3 class="textoSobreImagenes">Somos la mejor opción para tu que gestiones tu inventario.</h3>
         </section>
-        <section class="seccionImagenes">
-            <img class="imgDescriptiva" src="./images/inventario (1).png" alt="">
-            <img class="imgDescriptiva" src="./images/inventario (2).png" alt="">
-            <img class="imgDescriptiva" src="./images/inventario.png" alt="">
-        </section>
+        <section data-aos="zoom-in" class="seccionImagenes" id="seccionImagenes"></section>
     </main>
-    <footer>
+    <footer data-aos="zoom-in">
         <section>
             <p class="textFooter">
             Proyecto para el curso de JavaScript, de Agustín Andrade Gaitán.
@@ -82,6 +82,10 @@
             <img class="imgFooter" src="./images/diseno-de-paginas-web.png" alt="">
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
